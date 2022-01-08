@@ -1,0 +1,125 @@
+@import "libs/normalize";
+
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.users {
+  background-color: #0d1117;
+  padding: 15px 0px 0px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__searcher {
+    color: #fff;
+    margin: 12px 0 20px;
+    width: 87%;
+    padding: 12px 10px;
+    font-size: 19px;
+    background-color: #161b22;
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+}
+
+.user {
+  background-color: #0d1117;
+  padding: 15px 0px 0px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  &__subtitle {
+    font-weight: bold;
+  }
+  &-info {
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    &__img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    &__main {
+      padding-left: 20px;
+    }
+  }
+  &-bio {
+    padding: 8px;
+    text-align: justify;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: transparent;
+    border-top: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+    &:last-child {
+      border-bottom: 1px solid #fff;
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+    }
+    &__info-login {
+      padding: 0 25px;
+    }
+    &__info-img {
+      width: 80px;
+    }
+    &__repo {
+      span {
+        font-weight: bold;
+      }
+      &-num {
+        display: inline-block;
+        width: 40px;
+      }
+    }
+    &:hover {
+      background-color: #1b605e66;
+    }
+  }
+}
+
+.repo-item {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-top: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
+  &__info {
+    width: 125px;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-title {
+      font-weight: bold;
+    }
+    &-value {
+      display: inline-block;
+    }
+  }
+  &:hover {
+    background-color: #1b605e66;
+  }
+}
+
+.loading {
+  padding-bottom: 15px;
+}
+
+@import "media";
